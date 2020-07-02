@@ -51,6 +51,7 @@ def preprocess(data_path, json_path, num_mfcc=13, jump=512, num_fft=2048):
                     print(f"{file_path}: {i-1}")
 
     # store in json file
+    # Added additional comment to help teach git
     with open(json_path, "w") as fp:
         json.dump(data, fp, indent=4)
 
